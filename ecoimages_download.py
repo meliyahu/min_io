@@ -9,7 +9,7 @@ sts_client = boto3.client(
 )
 
 # use current users access token to S3 credentials
-access_token = "test"
+# access_token = "test"
 response = sts_client.assume_role_with_web_identity(
     RoleArn="arn:aws:iam::123456789012:user/svc-internal-api",
     RoleSessionName="test",
