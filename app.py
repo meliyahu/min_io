@@ -12,9 +12,9 @@ def index():
         file_name = req["filename"]
         minio = MinIo("ecoimages", file_name)
         file_url = minio.get_url()
-        return render_template("index.html", file_url=file_url)
+        return render_template("index.html", file_name=file_name, file_url=file_url)
     else:
-        return render_template("index.html", file_url="")
+        return render_template("index.html", file_name="", file_url="")
     
 
 
