@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>minio</title>
+  </head>
+  <body>
+    <h1>MinIO</h1>
+    <form action="/" method="POST">
+      <div>
+        <label for="filename">File Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="filename"
+          name="filename"
+          size="40"
+          placeholder="Enter file name"
+        />
+      </div>
+
+      <div>
+        <p>Presigned Url: {{file_url}}</p>
+      </div>
+      <input type="submit" size="20" value="Submit"/>
+    </form>
+  </body>
+</html>
